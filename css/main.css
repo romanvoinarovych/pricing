@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url("../fonts/webfontkit-20171011-131638/bebasneue_bold-webfont.woff"); }
+@font-face {
+  font-family: 'BebasNeueLight';
+  src: url("../fonts/webfontkit-20171011-131638/bebasneue_light-webfont.woff"); }
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url("../fonts/webfontkit-20171011-131638/bebasneue_regular-webfont.woff"); }
+@font-face {
+  font-family: 'BebasNeueThin';
+  src: url("../fonts/webfontkit-20171011-131638/bebasneue_thin-webfont.woff"); }
+.bg-body {
+  background-color: #9789f9; }
+
+.ba-container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.price-item1 {
+  width: 330px;
+  margin: 150px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #f5f4f9;
+  -webkit-box-shadow: 2px 4px 59px 0px #7a6be7;
+  box-shadow: 2px 4px 59px 0px #7a6be7; }
+  .price-item1 .price-item__header {
+    text-align: center; }
+    .price-item1 .price-item__header .price-item__header--price {
+      position: relative;
+      display: inline-block;
+      font-family: 'BebasNeueThin';
+      font-size: 60px;
+      line-height: 1;
+      letter-spacing: .08em;
+      margin: 35px 0 0; }
+    .price-item1 .price-item__header .price-item__header--price::before {
+      content: '$';
+      display: block;
+      position: absolute;
+      left: -10px;
+      top: 5px;
+      font-family: "BebasNeueThin";
+      font-size: 24px; }
+    .price-item1 .price-item__header .price-item__header--price::after {
+      content: '/hr';
+      display: block;
+      position: absolute;
+      bottom: 6px;
+      left: 50px;
+      font-family: "BebasNeueRegular";
+      font-size: 16px;
+      text-transform: uppercase; }
+    .price-item1 .price-item__header .price-item__header--info {
+      font-family: "BebasNeueRegular";
+      font-size: 24px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      margin: 10px 0 25px; }
+  .price-item1 .price-item__info {
+    background-color: #ffffff;
+    border-radius: 200px 200px 0 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 3.31;
+    padding: 0 100px 50px;
+    margin: 0 0 60px; }
+    .price-item1 .price-item__info .price-item__info--logo {
+      padding: 35px 0 0;
+      text-align: center; }
+      .price-item1 .price-item__info .price-item__info--logo img {
+        width: 30px; }
+    .price-item1 .price-item__info p {
+      margin: 0; }
+  .price-item1 .price-item1__place {
+    position: absolute;
+    display: block;
+    left: calc((100% - 203px) / 2);
+    bottom: -22px; }
+    .price-item1 .price-item1__place button {
+      font-family: 'BebasNeueBold';
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 53px;
+      color: #fff;
+      letter-spacing: .08em;
+      background-color: #6FCFFB;
+      -webkit-box-shadow: 2px 4px 18px 0px rgba(133, 192, 247, 0.31);
+      box-shadow: 2px 4px 18px 0px rgba(133, 192, 247, 0.31);
+      width: 203px;
+      height: 54px;
+      text-align: center;
+      border-radius: 54px;
+      border: none; }
+    .price-item1 .price-item1__place button:hover,
+    .price-item1 .price-item1__place button:focus,
+    .price-item1 .price-item1__place button:active {
+      outline: none; }
+    .price-item1 .price-item1__place button:hover {
+      background-color: #cdecfb;
+      color: #6FCFFB; }
+
+.price-item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #f5f4f9;
+  -webkit-box-shadow: 2px 4px 59px 0px #7a6be7;
+  box-shadow: 2px 4px 59px 0px #7a6be7;
+  width: 370px; }
+  .price-item2 .price-item__header {
+    text-align: center;
+    position: relative; }
+    .price-item2 .price-item__header .price-item__header--circle1 {
+      position: absolute;
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #fd8d7b;
+      top: 15px;
+      right: 15px; }
+    .price-item2 .price-item__header .price-item__header--circle2 {
+      position: absolute;
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #fd8d7b;
+      top: 11px;
+      right: 11px; }
+    .price-item2 .price-item__header .price-item__header--popular {
+      cursor: pointer;
+      top: 20px;
+      right: 25px;
+      position: absolute;
+      display: block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #fd8d7b;
+      color: #fff;
+      font-size: 24px;
+      font-family: "BebasNeueRegular";
+      line-height: 1.5; }
+      .price-item2 .price-item__header .price-item__header--popular p {
+        padding: 0.25em;
+        margin: 0; }
+    .price-item2 .price-item__header .price-item__header--popular:hover::after {
+      display: block;
+      content: 'popular';
+      background-color: #3b4040;
+      width: 101px;
+      height: 30px;
+      color: #fff;
+      position: absolute;
+      top: 9px;
+      left: 60px;
+      z-index: 999;
+      font-size: 16px;
+      font-family: "BebasNeueThin";
+      border-radius: 30px;
+      line-height: 30px;
+      letter-spacing: .08em; }
+    .price-item2 .price-item__header .price-item__header--price {
+      position: relative;
+      display: inline-block;
+      font-family: 'BebasNeueThin';
+      font-size: 60px;
+      line-height: 1;
+      letter-spacing: .08em;
+      margin: 40px 0 0; }
+    .price-item2 .price-item__header .price-item__header--price::before {
+      content: '$';
+      display: block;
+      position: absolute;
+      left: -10px;
+      top: 5px;
+      font-family: "BebasNeueThin";
+      font-size: 24px; }
+    .price-item2 .price-item__header .price-item__header--price::after {
+      content: '/hr';
+      display: block;
+      position: absolute;
+      bottom: 6px;
+      left: 50px;
+      font-family: "BebasNeueRegular";
+      font-size: 16px;
+      text-transform: uppercase; }
+    .price-item2 .price-item__header .price-item__header--info {
+      font-family: "BebasNeueRegular";
+      font-size: 24px;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      margin: 10px 0 35px; }
+  .price-item2 .price-item__info {
+    background-color: #ffffff;
+    border-radius: 200px 200px 0 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 3.31;
+    padding: 0 100px 65px;
+    position: relative; }
+    .price-item2 .price-item__info .price-item__info--logo {
+      padding: 35px 0 0;
+      text-align: center; }
+      .price-item2 .price-item__info .price-item__info--logo img {
+        width: 40px; }
+    .price-item2 .price-item__info p {
+      padding: 5px 0;
+      margin: 0; }
+    .price-item2 .price-item__info .price-item2__place {
+      position: absolute;
+      display: block;
+      left: calc((100% - 203px) / 2);
+      bottom: -22px; }
+      .price-item2 .price-item__info .price-item2__place button {
+        font-family: 'BebasNeueBold';
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 53px;
+        color: #fff;
+        letter-spacing: .08em;
+        background-color: #fd8d7b;
+        -webkit-box-shadow: 2px 4px 18px 0px rgba(253, 141, 123, 0.31);
+        box-shadow: 2px 4px 18px 0px rgba(253, 141, 123, 0.31);
+        width: 203px;
+        height: 54px;
+        text-align: center;
+        border-radius: 54px;
+        border: none; }
+      .price-item2 .price-item__info .price-item2__place button:hover,
+      .price-item2 .price-item__info .price-item2__place button:focus,
+      .price-item2 .price-item__info .price-item2__place button:active {
+        outline: none; }
+      .price-item2 .price-item__info .price-item2__place button:hover {
+        background-color: #fce5e1;
+        color: #fd8d7b; }
+  .price-item2 .price-item2__footer {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 11px;
+    line-height: 53px;
+    padding: 20px 0;
+    font-weight: 400;
+    text-align: center; }
+    .price-item2 .price-item2__footer p {
+      margin: 0;
+      color: #a9a9a9; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'BebasNeueBold';
+  src:url('../fonts/webfontkit-20171011-131638/bebasneue_bold-webfont.woff')
+}
+@font-face {
+  font-family: 'BebasNeueLight';
+  src:url('../fonts/webfontkit-20171011-131638/bebasneue_light-webfont.woff')
+}
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src:url('../fonts/webfontkit-20171011-131638/bebasneue_regular-webfont.woff')
+}
+@font-face {
+  font-family: 'BebasNeueThin';
+  src:url('../fonts/webfontkit-20171011-131638/bebasneue_thin-webfont.woff')
+}
+$btntextcolor: #fff;
+$fontHeaderbefore:'BebasNeueThin';
+$fontHeader: 'BebasNeueRegular';
+$colorFontinfo: #181818;
+$fontinfo: 'Roboto', 'Arial', sans-serif;
+@mixin price-item () {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background-color: #f5f4f9;
+	-webkit-box-shadow: 2px 4px 59px 0px #7a6be7;
+	        box-shadow: 2px 4px 59px 0px #7a6be7;
+}
+@mixin price-item__header--price () {
+	position: relative;
+	display: inline-block;
+	font-family: 'BebasNeueThin';
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: .08em;
+}
+.bg-body {
+	background-color: #9789f9;
+}
+.ba-container {
+	max-width: 1200px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.price-item1 {
+	width: 330px;
+	margin: 150px 0;
+	position: relative;
+	@include price-item ();
+	.price-item__header {
+		text-align: center;
+		.price-item__header--price {
+			@include price-item__header--price ();
+			margin: 35px 0 0;
+		}
+		.price-item__header--price::before {
+			content: '$';
+			display: block;
+			position: absolute;
+			left: -10px;
+			top: 5px;
+			font-family: $fontHeaderbefore;
+			font-size: 24px;
+		}
+		.price-item__header--price::after {
+			content: '/hr';
+			display: block;
+			position: absolute;
+			bottom: 6px;
+			left: 50px;
+			font-family: $fontHeader;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+		.price-item__header--info {
+			font-family: $fontHeader;
+			font-size: 24px;
+			line-height: 1.5;
+			letter-spacing: 0.04em;
+			margin: 10px 0 25px;
+		}
+	}
+	.price-item__info {
+		background-color: #ffffff;
+		border-radius: 200px 200px 0 0;
+		font-family: $fontinfo;
+		font-weight:300;
+		font-size: 16px;
+		line-height: 3.31;
+		padding: 0 100px 50px;
+		margin: 0 0 60px;
+		.price-item__info--logo {
+			padding: 35px 0 0;
+			text-align: center;
+			img {
+				width: 30px;
+			}
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.price-item1__place {
+		position: absolute;
+		display: block;
+		left: calc((100% - 203px) / 2);
+		bottom: -22px;
+		button {
+			font-family: 'BebasNeueBold';
+			text-transform: uppercase;
+			font-size: 18px;
+			line-height: 53px;
+			color: $btntextcolor;
+			letter-spacing: .08em;
+			background-color: #6FCFFB;
+			-webkit-box-shadow: 2px 4px 18px 0px rgba(133, 192, 247, 0.31);
+			        box-shadow: 2px 4px 18px 0px rgba(133, 192, 247, 0.31);
+			width: 203px;
+			height: 54px;
+			text-align: center;
+			border-radius: 54px;
+			border: none;
+		}
+		button:hover,
+		button:focus,
+		button:active {
+			outline:none;
+		}
+		button:hover {
+			background-color: #cdecfb;
+			color: #6FCFFB;
+		}
+	}
+}
+.price-item2 {
+	@include price-item ();
+	width: 370px;
+	.price-item__header {
+		text-align: center;
+		position: relative;
+		.price-item__header--circle1 {
+			position: absolute;
+			display: block;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background: #fd8d7b;
+			top: 15px;
+			right: 15px;
+		}
+		.price-item__header--circle2 {
+			position: absolute;
+			display: block;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: #fd8d7b;
+			top: 11px;
+			right: 11px;
+		}
+		.price-item__header--popular {
+			cursor: pointer;
+			top: 20px;
+			right: 25px;
+			position: absolute;
+			display: block;
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			background: #fd8d7b;
+			color: #fff;
+			font-size: 24px;
+			font-family: $fontHeader;
+			line-height: 1.5;
+			p {
+				padding: 0.25em;
+				margin: 0;
+			}
+		}
+		.price-item__header--popular:hover::after {
+			display: block;
+			content: 'popular';
+			background-color: #3b4040;
+			width: 101px;
+			height: 30px;
+			color: #fff;
+			position: absolute;
+			top: 9px;
+			left: 60px;
+			z-index: 999;
+			font-size: 16px;
+			font-family: $fontHeaderbefore;
+			border-radius: 30px;
+			line-height: 30px;
+			letter-spacing: .08em;
+		}
+		.price-item__header--price {
+			@include price-item__header--price ();
+			margin: 40px 0 0;
+		}
+		.price-item__header--price::before {
+			content: '$';
+			display: block;
+			position: absolute;
+			left: -10px;
+			top: 5px;
+			font-family: $fontHeaderbefore;
+			font-size: 24px;
+		}
+		.price-item__header--price::after {
+			content: '/hr';
+			display: block;
+			position: absolute;
+			bottom: 6px;
+			left: 50px;
+			font-family: $fontHeader;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+		.price-item__header--info {
+			font-family: $fontHeader;
+			font-size: 24px;
+			line-height: 1.5;
+			letter-spacing: 0.08em;
+			margin: 10px 0 35px;
+		}
+	}
+	.price-item__info {
+		background-color: #ffffff;
+		border-radius: 200px 200px 0 0;
+		font-family: $fontinfo;
+		font-weight:300;
+		font-size: 16px;
+		line-height: 3.31;
+		padding: 0 100px 65px;
+		position: relative;
+		.price-item__info--logo {
+			padding: 35px 0 0;
+			text-align: center;
+			img {
+				width: 40px;
+			}
+		}
+		p {
+			padding: 5px 0;
+			margin: 0;
+		}
+		.price-item2__place {
+			position: absolute;
+			display: block;
+			left: calc((100% - 203px) / 2);
+			bottom: -22px;
+			button {
+				font-family: 'BebasNeueBold';
+				text-transform: uppercase;
+				font-size: 18px;
+				line-height: 53px;
+				color: $btntextcolor;
+				letter-spacing: .08em;
+				background-color: #fd8d7b;
+				-webkit-box-shadow: 2px 4px 18px 0px rgba(253, 141, 123, 0.31);
+				        box-shadow: 2px 4px 18px 0px rgba(253, 141, 123, 0.31);
+				width: 203px;
+				height: 54px;
+				text-align: center;
+				border-radius: 54px;
+				border: none;
+			}
+			button:hover,
+			button:focus,
+			button:active {
+				outline:none;
+			}
+			button:hover {
+				background-color: #fce5e1;
+				color: #fd8d7b;
+			}
+		}
+	}
+	.price-item2__footer {
+		font-family: $fontinfo;
+		font-size: 11px;
+		line-height: 53px;
+		padding: 20px 0;
+		font-weight: 400;
+		text-align: center;
+		p {
+			margin: 0;
+			color: #a9a9a9
+		}
+	}
+}
+
+
+
